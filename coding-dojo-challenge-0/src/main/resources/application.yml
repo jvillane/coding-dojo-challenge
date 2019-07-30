@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/coding_dojo
+    username: root
+    password:
+
+management:
+  endpoints:
+    web:
+      cors:
+        allowed-origins: '*'
+
+logging:
+  level:
+    cl.jvillane: trace
+    org.hibernate: trace
+    org.hibernate.SQL: debug
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
